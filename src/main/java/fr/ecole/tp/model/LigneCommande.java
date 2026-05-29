@@ -1,0 +1,24 @@
+package fr.ecole.tp.model;
+
+public class LigneCommande {
+    private final Produit produit;
+    private final int quantite;
+
+    public LigneCommande(Produit produit, int quantite) {
+        this.produit = produit;
+        this.quantite = quantite;
+    }
+
+    public Produit getProduit() {
+        return produit;
+    }
+
+    public int getQuantite() {
+        return quantite;
+    }
+
+    @Override
+    public String toString() {
+        return "LigneCommande{" + "produit=" + produit + ", quantite=" + quantite + '}';
+    }
+}
