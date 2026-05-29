@@ -1,0 +1,73 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"ed7fd91b-cfbe-4de4-b69a-e9e3782219ec\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/fr/ecole/tp/service/ProduitService.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/fr/ecole/tp/util/ProduitFormatter.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/TP_Java_Lambdas_Streams_Gitflow.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/TP_Java_Lambdas_Streams_Gitflow.md\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\">\n    <execution />\n  </component>\n  <component name=\"EmbeddingIndexingInfo\">\n    <option name=\"cachedIndexableFilesCount\" value=\"4\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\n  \"lastFilter\": {\n    \"state\": \"OPEN\",\n    \"assignee\": \"AntoninSafrano\"\n  }\n}]]></component>\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\n  \"selectedUrlAndAccountId\": {\n    \"url\": \"https://github.com/ted-sama/tp-java-streams.git\",\n    \"accountId\": \"e4d182fc-3a24-4cd0-9085-5693a99986f1\"\n  }\n}]]></component>\n  <component name=\"McpProjectServerCommands\">\n    <commands />\n    <urls />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 4\n}</component>\n  <component name=\"ProjectId\" id=\"3EOBrFeuTTxH9CCVQaZjjFXo5cW\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Application.Main.executor\": \"Run\",\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\n    \"RunOnceActivity.MCP Project settings loaded\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\n    \"dart.analysis.tool.window.visible\": \"false\",\n    \"git-widget-placeholder\": \"feature/services-stream\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"last_opened_file_path\": \"/Users/ted/dev/esiee-it/tp-java-streams\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/java/fr/ecole/tp\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"fr.ecole.tp.Main\" />\n      <module name=\"tp-java-streams\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"fr.ecole.tp.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90\" />\n        <option value=\"bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"ed7fd91b-cfbe-4de4-b69a-e9e3782219ec\" name=\"Changes\" comment=\"\" />\n      <created>1780039932587</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1780039932587</updated>\n      <workItem from=\"1780039933666\" duration=\"87000\" />\n      <workItem from=\"1780040050665\" duration=\"965000\" />\n      <workItem from=\"1780041023830\" duration=\"141000\" />\n      <workItem from=\"1780041175148\" duration=\"2105000\" />\n      <workItem from=\"1780044970213\" duration=\"5408000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision dd4bc9e15014a4e8f8db09badb7c7c89fb781460)
++++ b/.idea/workspace.xml	(date 1780050773446)
+@@ -4,13 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="ed7fd91b-cfbe-4de4-b69a-e9e3782219ec" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/ecole/tp/service/ProduitService.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/ecole/tp/util/ProduitFormatter.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/TP_Java_Lambdas_Streams_Gitflow.md" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Java_Lambdas_Streams_Gitflow.md" afterDir="false" />
+-    </list>
++    <list default="true" id="ed7fd91b-cfbe-4de4-b69a-e9e3782219ec" name="Changes" comment="Ajout des fonctionnalités 1 à 9." />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -31,6 +25,7 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+   "lastFilter": {
+@@ -47,6 +42,9 @@
+   <component name="McpProjectServerCommands">
+     <commands />
+     <urls />
++  </component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="CurrentFile" />
+   </component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 4
+@@ -125,8 +123,17 @@
+       <workItem from="1780040050665" duration="965000" />
+       <workItem from="1780041023830" duration="141000" />
+       <workItem from="1780041175148" duration="2105000" />
+-      <workItem from="1780044970213" duration="5408000" />
++      <workItem from="1780044970213" duration="5768000" />
++    </task>
++    <task id="LOCAL-00001" summary="Ajout des fonctionnalités 1 à 9.">
++      <option name="closed" value="true" />
++      <created>1780050548938</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1780050548938</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -142,6 +149,10 @@
+         </entry>
+       </map>
+     </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Ajout des fonctionnalités 1 à 9." />
++    <option name="LAST_COMMIT_MESSAGE" value="Ajout des fonctionnalités 1 à 9." />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />
