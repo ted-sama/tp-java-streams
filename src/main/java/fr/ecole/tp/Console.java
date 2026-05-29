@@ -23,6 +23,9 @@ public class Console {
     }
 
     public void run() {
+        // Fonctionnalité 16 : démonstration de génération d'un identifiant de commande
+        cs.afficherNouveauId();
+
         while (true) {
             System.out.println("=== CATALOGUE CONSOLE ===");
             System.out.println("1. Afficher tous les produits\n" +
@@ -42,13 +45,14 @@ public class Console {
             int choice = readChoice();
 
             switch (choice) {
-                case 1: ps.afficherTousFormates(produits);
+                case 1: ps.afficherAvecPrefixe(produits);
                 break;
                 case 2: ps.afficherPrixCroissant(produits);
                 break;
                 case 3:
-                    System.out.println("De quelle catégorie voulez-vous ajouter les produits ?");
-                    String category  = scanner.nextLine();
+                    System.out.println("De quelle catégorie voulez-vous afficher les produits ?");
+                    // Fonctionnalité 17 : nettoyage de la saisie (trim + minuscules)
+                    String category = cs.nettoyer(scanner.nextLine());
                     ps.afficherParCategorie(produits, category);
                 break;
                 case 4: ps.afficherPromotions(produits);
@@ -72,7 +76,7 @@ public class Console {
                         System.out.println("Certains produits n'ont pas de prix positif");
                     }
                 break;
-                case 12: plls.demo(1000);
+                case 12: plls.demo(10000000);
                 break;
                 case 0:
                     System.out.println("Au revoir !");

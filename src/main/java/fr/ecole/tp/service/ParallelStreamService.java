@@ -24,8 +24,7 @@ public class ParallelStreamService {
     private List<Integer> genererNombres(int taille) {
         List<Integer> nombres = new ArrayList<>();
         for (int i = 0; i < taille; i++) {
-            int j = random.nextInt(30000);
-            nombres.add(i);
+            nombres.add(random.nextInt(30000));
         }
         return nombres;
     }
