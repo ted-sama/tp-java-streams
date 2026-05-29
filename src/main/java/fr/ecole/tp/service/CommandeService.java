@@ -55,6 +55,10 @@ public class CommandeService {
     // Fonctionnalité 17
     UnaryOperator<String> nettoyerSaisie = s -> s.trim().toLowerCase();
 
+    public String nettoyer(String saisie) {
+        return nettoyerSaisie.apply(saisie);
+    }
+
     public void afficherSaisieNettoyee(String saisie) {
         System.out.println("Saisie nettoyée : " + nettoyerSaisie.apply(saisie));
     }
