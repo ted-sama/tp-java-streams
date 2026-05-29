@@ -15,12 +15,12 @@ import java.util.stream.Collectors;
 public class ProduitService {
 
     //Fonctionnalité 1
-    public void afficherToutProduits(List<Produit> produits){
+    public void afficherTousProduits(List<Produit> produits){
         produits.forEach(ProduitFormatter.afficherProduit);
     }
 
     // Fonctionnalité 2
-    public void afficherToutFormates(List<Produit> produits){
+    public void afficherTousFormates(List<Produit> produits){
         produits.stream()
                     .map(ProduitFormatter.formater)
                     .forEach(System.out::println);
@@ -32,7 +32,7 @@ public class ProduitService {
     public Predicate<Produit> categorieInformatique = p-> p.getCategorie().equals("Informatique");
 
     //Fonctionnalité 4
-    public void AfficherFiltrePromoEtPrixSup(List<Produit> produits){
+    public void afficherFiltrePromoEtPrixSup(List<Produit> produits){
         produits.stream()
                 .filter(estEnPromotion)
                 .filter(prixSuperieurA100)
@@ -92,9 +92,9 @@ public class ProduitService {
     public void afficherPage(List<Produit> produits, int page){
 
         produits.stream()
-                .map(ProduitFormatter.formater)
                 .skip((page - 1) * 5L)
                 .limit(5L)
+                .map(ProduitFormatter.formater)
                 .forEach(System.out::println);
     }
 
