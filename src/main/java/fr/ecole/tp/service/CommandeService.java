@@ -22,7 +22,7 @@ public class CommandeService {
                 .forEach(System.out::println);
     }
     // Fonctionnalité 14
-    BiFunction<Produit, Integer, Double> calculLigne =
+    public BiFunction<Produit, Integer, Double> calculLigne =
             (produit, quantite) -> produit.getPrix() * quantite;
 
     public void afficherTotalParCommande(List<Commande> commandes) {
@@ -46,14 +46,14 @@ public class CommandeService {
     }
 
         // Fonctionnalité 16
-    Supplier<String> idGenerator = () -> UUID.randomUUID().toString();
+    public Supplier<String> idGenerator = () -> UUID.randomUUID().toString();
 
     public void afficherNouveauId() {
         System.out.println("Nouvel ID de commande : " + idGenerator.get());
     }
 
     // Fonctionnalité 17
-    UnaryOperator<String> nettoyerSaisie = s -> s.trim().toLowerCase();
+    public UnaryOperator<String> nettoyerSaisie = s -> s.trim().toLowerCase();
 
     public void afficherSaisieNettoyee(String saisie) {
         System.out.println("Saisie nettoyée : " + nettoyerSaisie.apply(saisie));
