@@ -45,17 +45,19 @@ Le menu console expose les traitements suivants :
 | 12 | Démonstration `parallelStream` | séquentiel vs parallèle |
 | 0 | Quitter | Sortie du programme |
 
-D'autres traitements sont implémentés dans les services et couverts par les tests sans être exposés directement au menu
+D'autres traitements sont implémentés dans les services et couverts par les tests sans être exposés directement au menu : tri décroissant, tri par catégorie puis nom, catégories via `Collectors.toSet()`, total du catalogue via `reduce`, `anyMatch`, `findFirst`, et collecte vers `Map` via `Collectors.toMap`.
 
 ## Architecture
 
 ```
-src/main/java/fr/ecole/tp/
-├── Main.java                      # point d'entrée
-├── Console.java                   # menu texte et boucle d'interaction
-├── model/                         # Produit, Client, LigneCommande, Commande, DataFactory
-├── service/                       # ProduitService, CommandeService, ParallelStreamService
-└── util/                          # ProduitFormatter (Consumer + Function)
+src/
+├── main/java/fr/ecole/tp/
+│   ├── Main.java                  # point d'entrée
+│   ├── Console.java               # menu texte et boucle d'interaction
+│   ├── model/                     # Produit, Client, LigneCommande, Commande, DataFactory
+│   ├── service/                   # ProduitService, CommandeService, ParallelStreamService
+│   └── util/                      # ProduitFormatter (Consumer + Function)
+└── test/java/fr/ecole/tp/        # ProduitServiceTest, CommandeServiceTest
 ```
 
 ## Gitflow
@@ -83,7 +85,7 @@ feature/tests              # tests unitaires
 
 `map` transforme chaque produit en une autre valeur, par exemple en chaîne formatée.
 
-`flatMap` aplatit les lignes de toutes les commandes en un seul flux de produits. Là où `map` produirait un `Stream<Stream<Produit>>`, flatMap` fusionne tout en un `Stream<Produit>` unique.
+`flatMap` aplatit les lignes de toutes les commandes en un seul flux de produits. Là où `map` produirait un `Stream<Stream<Produit>>`, `flatMap` fusionne tout en un `Stream<Produit>` unique.
 
 `reduce` et `mapToDouble().sum()` calculent tous les deux le prix total du catalogue. `reduce` est générique et accepte n'importe quel accumulateur, mais il travaille sur des `Double`. `mapToDouble().sum()` utilise un `DoubleStream` : code plus lisible et plus rapide pour une simple somme de `double`.
 
@@ -94,8 +96,8 @@ feature/tests              # tests unitaires
 | Rôle | Responsabilités | Étudiant |
 |---|---|---|
 | Référent modèle / données | Classes métier, `DataFactory`, Gitflow, `Console` | Teddy |
-| Référent traitements Stream / tests | `ProduitService` , tests | Antonin |
-| Référent traitements Stream / tests | `CommandeService`, tests | Aurélien |
+| Référent traitements Stream / tests | Classes métier, `ProduitService` , tests Commandes | Antonin |
+| Référent traitements Stream / tests | Classes métier, `CommandeService`, tests Produits | Aurélien |
 
 ## Difficultés rencontrées
 
@@ -107,8 +109,10 @@ Cohérence des noms : quelques méthodes ont été renommées pour respecter le 
 
 ## Corrections apportées en fin de TP
 
-En relisant le sujet à la fin du TP, on s'est rendu compte que des fonctionnalités attenduesétaient manquantes ou incomplètes. On a donc repris le code après coup pour les ajouter et corriger plusieurs bugs.
+En relisant le sujet à la fin du TP, on s'est rendu compte que des fonctionnalités attendues étaient manquantes ou incomplètes. On a donc repris le code après coup pour les ajouter et corriger plusieurs bugs.
 
-Option « 0. Quitter » sans effet : le choix `0` ne quittait pas et rebouclait à l'infini. On ajouté un `case 0` qui termine le programme.
+Crash sur saisie non numérique : taper autre chose qu'un nombre dans le menu provoquait une `NumberFormatException`. La lecture du choix passe maintenant par une méthode `readChoice()` qui rattrape l'erreur et revalide la plage 0 à 12.
 
-Bug dans la génération de nombres de la démo `parallelStream` : la valeur aléatoire était calculée puis ignorée, l'indice de boucle étant ajouté à la place (missinput). C'est corrigé, et la liste est passée à 10 millions d'éléments pour une mesure pertinente.
+Option « 0. Quitter » sans effet : le choix `0` ne quittait pas et rebouclait à l'infini. On a ajouté un `case 0` qui termine le programme.
+
+Bug dans la génération de nombres de la démo `parallelStream` : la valeur aléatoire était calculée puis ignorée, l'indice de boucle étant ajouté à la place. C'est corrigé, et la liste est passée à 10 millions d'éléments pour une mesure pertinente.
