@@ -1,9 +1,9 @@
 package fr.ecole.tp.model;
 
 public class Client {
-    private final String id;
-    private final String nom;
-    private final String email;
+    private String id;
+    private String nom;
+    private String email;
 
     public Client(String id, String nom, String email) {
         this.id = id;

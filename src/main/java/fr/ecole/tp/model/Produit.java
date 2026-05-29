@@ -1,11 +1,11 @@
 package fr.ecole.tp.model;
 
 public class Produit {
-    private final String id;
-    private final String nom;
-    private final String categorie;
-    private final double prix;
-    private final boolean promotion;
+    private String id;
+    private String nom;
+    private String categorie;
+    private double prix;
+    private boolean promotion;
 
     public Produit(String id, String nom, String categorie, double prix, boolean promotion) {
         this.id = id;
