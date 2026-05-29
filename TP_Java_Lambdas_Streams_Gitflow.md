@@ -58,7 +58,7 @@ tp-java-streams/
 │   │           ├── Main.java
 │   │           ├── model/
 │   │           ├── service/
-│   │           └── util/
+│   │           └── fr.ecole.tp.util/
 │   └── test/
 │       └── java/
 │           └── fr/ecole/tp/
