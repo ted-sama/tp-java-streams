@@ -6,6 +6,7 @@ import fr.ecole.tp.util.ProduitFormatter;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -98,4 +99,39 @@ public class ProduitService {
     }
 
     //Fonctionnalité 10
+    public double prixTotalReduce(List<Produit> produits){
+        return produits.stream()
+                .map(Produit::getPrix)
+                .reduce(0.0, (total, prix) -> total + prix);
+    }
+
+    //Fonctionnalité 11
+    public double prixTotalSum(List<Produit> produits){
+        return produits.stream()
+                .mapToDouble(Produit::getPrix)
+                .sum();
+    }
+
+    //Fonctionnalité 12
+    public boolean existeProduitEnPromo(List<Produit> produits){
+        return produits.stream()
+                .anyMatch(estEnPromotion);
+    }
+
+    public boolean tousPrixPositifs(List<Produit> produits){
+        return produits.stream()
+                .allMatch(p -> p.getPrix() > 0);
+    }
+
+    public Optional<Produit> premierInformatique(List<Produit> produits){
+        return produits.stream()
+                .filter(categorieInformatique)
+                .findFirst();
+    }
+
+    public Optional<Produit> produitLePlusCher(List<Produit> produits){
+        return produits.stream()
+                .max(Comparator.comparing(Produit::getPrix));
+    }
+
 }
