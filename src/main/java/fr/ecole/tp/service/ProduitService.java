@@ -39,6 +39,20 @@ public class ProduitService {
                 .forEach(ProduitFormatter.afficherProduit);
     }
 
+    // Affiche uniquement les produits en promotion
+    public void afficherPromotions(List<Produit> produits){
+        produits.stream()
+                .filter(estEnPromotion)
+                .forEach(ProduitFormatter.afficherProduit);
+    }
+
+    // Affiche les produits d'une catégorie donnée
+    public void afficherParCategorie(List<Produit> produits, String categorie){
+        produits.stream()
+                .filter(p -> p.getCategorie().equalsIgnoreCase(categorie))
+                .forEach(ProduitFormatter.afficherProduit);
+    }
+
     //Fonctionnalité 5
     public void afficherMajuscules(List<Produit> produits){
         produits.stream()

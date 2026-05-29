@@ -8,20 +8,20 @@ public class ParallelStreamService {
 
     Random random = new Random();
 
-    public List<Integer> calculSequentiel(List<Integer> nombres) {
+    private List<Integer> calculSequentiel(List<Integer> nombres) {
         return nombres.stream()
                 .map(n -> n * 2)
                 .toList();
     }
 
-    public List<Integer> calculParalelle(List<Integer> nombres) {
+    private List<Integer> calculParalelle(List<Integer> nombres) {
         return nombres.parallelStream()
                 .map(n -> n * 2)
                 .toList();
     }
 
     // On génère plein de nombres au hasard
-    public List<Integer> genererNombres(int taille) {
+    private List<Integer> genererNombres(int taille) {
         List<Integer> nombres = new ArrayList<>();
         for (int i = 0; i < taille; i++) {
             int j = random.nextInt(30000);
