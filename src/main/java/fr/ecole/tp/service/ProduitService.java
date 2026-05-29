@@ -148,4 +148,10 @@ public class ProduitService {
                 .max(Comparator.comparing(Produit::getPrix));
     }
 
+    //Fonctionnalité 19
+    public void afficherAvecPrefixe(List<Produit> produits){
+        String prefixe = "[PRODUIT] ";
+        produits.forEach(p -> System.out.println(prefixe + ProduitFormatter.formater.apply(p)));
+    }
+
 }
